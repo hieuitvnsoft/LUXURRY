@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=LUXURYWATCH</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">1234$</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="entities.TblAdmin"/>
+    <mapping class="entities.TblColor"/>
+    <mapping class="entities.TblLiked"/>
+    <mapping class="entities.TblNews"/>
+    <mapping class="entities.TblOrderDetail"/>
+    <mapping class="entities.TblOrders"/>
+    <mapping class="entities.TblPaymentMethod"/>
+    <mapping class="entities.TblProductDetail"/>
+    <mapping class="entities.TblProducts"/>
+    <mapping class="entities.TblShipMethod"/>
+    <mapping class="entities.TblTrademark"/>
+    <mapping class="entities.TblTypeNews"/>
+    <mapping class="entities.TblTypeProduct"/>
+    <mapping class="entities.TblUser"/>
+  </session-factory>
+</hibernate-configuration>
